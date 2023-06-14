@@ -6,7 +6,7 @@
     Here are several points to consider before proceeding:
     * Install or update to the latest version of the **Google Cloud CLI**
     * Set a default region and zone `asia-southeast2`
-    * Enable **Google Container Registry API** and **Cloud Run API** 
+    * Enable **Google Container Registry API** and **Cloud Run API** and **Cloud Build API**
       <br><br>
   * **Google Cloud Run**
     <br>
