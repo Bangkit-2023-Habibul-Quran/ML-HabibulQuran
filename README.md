@@ -1,70 +1,35 @@
 # ML-HabibulQuran
+----
+- 1.1 Hijaiyah Audio Classification
+- 1.2 Ayat ...
 
-# Deployment to Google Cloud
-  * **Prerequisites** 
-    <br>
-    Here are several points to consider before proceeding:
-    * Install or update to the latest version of the **Google Cloud CLI**
-    * Set a default region and zone `asia-southeast2`
-    * Enable **Google Container Registry API** and **Cloud Run API** and **Cloud Build API**
-      <br><br>
-  * **Google Cloud Run**
-    <br>
-The Google Cloud Run is a fully managed serverless compute platform provided by Google Cloud. It allows you to run stateless containers that are automatically scaled based on incoming requests or events. Cloud Run abstracts away the underlying infrastructure, enabling you to focus on building and deploying your applications without worrying about managing servers or scaling infrastructure.
-    <br><br>
-    To deploy a machine learning model through Google Cloud Run,
-    * Activate **Cloud Shell**
-    * Clone ML-HabibulQuran git repository
-      ````
-      git clone -b ??? "https://github.com/Bangkit-2023-Habibul-Quran/ML-HabibulQuran.git" habibulAyat
-      ````
-    * Go to the  folder
-      ````
-      cd habibulAyat
-      ````
-    * Make sure that you have a `Dockerfile` file and requirements.txt using the `ls` command on **Cloud Shell**
-    * Example Dockerfile
-      ````
-      FROM python:3.10.11
+## 1.1 Hijaiyah Audio Classification
 
-      # Use the official lightweight Python image.
-      # https://hub.docker.com/_/python
-      # FROM python:3.9-slim
+This project focuses on developing a Audio Classification system using machine learning techniques. The goal is to accurately identify Hijaiyah to help customers learn about Arabic Alphabet and how to pronounce it right .
 
-      # Allow statements and log messages to immediately appear in the Knative logs
-      ENV PYTHONUNBUFFERED True
+### Table of Contents
 
-      # Copy local code to the container image.
-      ENV APP_HOME /app
-      WORKDIR $APP_HOME
-      COPY . ./
+- [Dataset](#dataset)
+- [Project Steps](#project-steps)
+- [Results](#results)
 
-      # Install production dependencies.
-      RUN pip install -r requirements.txt
+### Dataset
 
-      # Set Gunicorn configuration
-      ENV GUNICORN_CMD_ARGS="--timeout 604800???"
-      # Run the web service on container startup. Here we use the gunicorn
-      # webserver, with one worker process and 8 threads.
-      # For environments with multiple CPU cores, increase the number of workers
-      # to be equal to the cores available.
-      # Timeout is set to 0 to disable the timeouts of the workers to allow Cloud Run to handle instance scaling.
-      CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
-      ````
-   * Creating Docker image
-      ```
-      gcloud builds submit --tag gcr.io/habibulquran/habibulayat
-      ```
-   * Deploy image to Cloud Run
-     * On GCP console, go to **Navigation Menu -> Cloud Run**
-     * Click **Create Service** 
-     * Choose Deploy one revision from an existing container image
-       * Select Container image URL -> Container Registry -> Your image -> Click Select
-     * Set region to `asia-southeast2`
-     * Set maximum number of instances to 5
-     * Select Allow unauthenticated invocations
-     * Click dropdown on Container, Networking, Security
-       * Set memory to 16 GB memory 4vCPU
-       * Set request time out to 3600
-     * Leave the rest of the menu to default
-     * Click Create (this may take a few minutes)
+The dataset used for this project contains Arabic Alphabet (Hijaiyah) audio files with a .wav format. It consists of 29 alphabets (~ 140 audio each). 
+
+Dataset link: https://drive.google.com/drive/folders/1GXyFO6LGBgO-FNRjDIu5fRALkoAb2en2
+
+### Project Steps
+
+The project follows these steps:
+
+1. Data Collection: Import Packages, Load Data, and Data Labelling.
+1. Data Preprocessing: Data Labelling, Feature Extraction using MFCC & Spectogram, and encode categorical variables.
+2. Exploratory Data Analysis: Understand the distribution of audio data, identify patterns and correlations between all Hijaiyah Alphabet.
+3. Architecture Modeling: Implement appropriate classification models for Audio Classification, such as CNN and LSTM model (adding more convolutional layers, increasing the number of filters, or including additional pooling or dropout layers) and apply Regularization techniques to prevent Overfitting
+5. Model Training and Evaluation: Train the selected models and evaluate their performance using metrics of accuracy.
+6. Model Comparison: Compare the results of different models to identify the most effective combination.
+
+### Results
+
+The best performing model for this project is the CNN combined with MFCC and Spectogram technique. This combination achieved a Training loss: 0.0067 with accuracy: 0.9985 and val_loss: 0.3433 with val_accuracy: 0.9164, indicating its effectiveness in accurately identifying Hijaiyah Alphabet.
