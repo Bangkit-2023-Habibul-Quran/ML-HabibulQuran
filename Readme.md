@@ -74,7 +74,7 @@ The following table shows the training and evaluation results for the model:
 
 # Model Summary
 
-This model has undergone multiple rounds of fine-tuning using the `Wave2Vec2` model. This iterative fine-tuning process was repeated several times to progressively enhance the model's performance and capabilities. Finally, the model presented here is the result of the fine-tuning process based on [zarko1231/model-baru-collab](https://huggingface.co/zarko1231/model-baru-collab) using the underlying architecture from [facebook/wav2vec2-xls-r-300m](https://huggingface.co/facebook/wav2vec2-xls-r-300m).
+This model has undergone multiple rounds of fine-tuning using the `Wave2Vec2` model. This iterative fine-tuning process was repeated several times to progressively enhance the model's performance and capabilities. Finally, the model presented here is the result of the fine-tuning process based on [mujadid-syahbana/alquran-verse-recitation-wave2vec2-xls-r-model](https://huggingface.co/mujadid-syahbana/alquran-verse-recitation-wave2vec2-xls-r-model) using the underlying architecture from [facebook/wav2vec2-xls-r-300m](https://huggingface.co/facebook/wav2vec2-xls-r-300m).
 
 It achieves the following results on the evaluation set:
 - Training Loss: `0.059200`
