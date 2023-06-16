@@ -84,3 +84,9 @@ It achieves the following results on the evaluation set:
 - Pytorch 2.0.1+cu118
 - Datasets 2.12.0
 - Tokenizers 0.13.3
+
+### Reference
+- https://arxiv.org/pdf/1904.08779.pdf
+- https://arxiv.org/pdf/2006.11477.pdf
+- https://www.researchgate.net/publication/347762743_Ar-DAD_Arabic_diversified_audio_dataset
+
