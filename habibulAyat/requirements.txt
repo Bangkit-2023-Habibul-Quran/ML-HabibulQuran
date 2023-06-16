@@ -1,0 +1,8 @@
+tensorflow
+librosa
+transformers==4.28.0
+flask
+werkzeug
+datasets
+huggingface_hub
+gunicorn
