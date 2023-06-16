@@ -22,7 +22,9 @@ All models link: https://drive.google.com/drive/folders/12eklYCcZ_X8WhCX4gqSNuZL
 
 The dataset used for this project contains Arabic Alphabet (Hijaiyah) audio files with a .wav format. It consists of 29 alphabets (~ 140 audio each). 
 
-Dataset link: https://drive.google.com/drive/folders/1GXyFO6LGBgO-FNRjDIu5fRALkoAb2en2
+Audio Dataset link: https://drive.google.com/drive/folders/1nEHE705xw6s9V3rrRKZF3Sthk3J5a-23?usp=drive_link
+
+CSV Dataset link: https://drive.google.com/drive/folders/1GXyFO6LGBgO-FNRjDIu5fRALkoAb2en2
 
 
 
@@ -36,6 +38,16 @@ The project follows these steps:
 3. Architecture Modeling: Implement appropriate classification models for Audio Classification, such as CNN and LSTM model (adding more convolutional layers, increasing the number of filters, or including additional pooling or dropout layers) and apply Regularization techniques to prevent Overfitting
 5. Model Training and Evaluation: Train the selected models and evaluate their performance using metrics of accuracy.
 6. Model Comparison: Compare the results of different models to identify the most effective combination.
+
+## Training hyperparameters
+The following hyperparameters were used during training:
+
+- patience=3
+- verbose=1
+- batch_size=32
+- epochs=10
+- monitor='val_loss'
+- random_state=42
 
 ## Results
 
