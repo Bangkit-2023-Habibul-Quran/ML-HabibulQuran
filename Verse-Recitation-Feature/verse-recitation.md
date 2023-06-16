@@ -1,13 +1,3 @@
----
-tags:
-- generated_from_trainer
-metrics:
-- wer
-model-index:
-- name: model-baru-collab
-  results: []
----
-
 ## Model description
 
 More information needed
