@@ -22,7 +22,7 @@ The following hyperparameters were used during training:
 - gradient_accumulation_steps: 2
 - optimizer: Adamw_torch
 - lr_scheduler_type: linear
-- num_epochs: 25
+- num_epochs: 25 (but 20 epoch succes 5 fail to run and save)
 - mixed_precision_training: Native AMP
 
 ## Training and Evaluation Results
