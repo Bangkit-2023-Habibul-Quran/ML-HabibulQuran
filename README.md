@@ -1,13 +1,14 @@
 # Hijaiyah Audio Classification
-<br>
+---
 
 ## Machine Learning Team 
 | [<img src="https://avatars.githubusercontent.com/u/70382269?v=4" width="75px;"/><br /><sub>Giovaldi Ramadhan</sub>](https://github.com/giovaldir)<br /> | [<img src="https://avatars.githubusercontent.com/u/126967488?v=4" width="75px;"/><br /><sub>Mujadid Syahbana</sub>](https://github.com/mujadidsyahbana)<br /> | [<img src="https://avatars.githubusercontent.com/u/90538472?v=4" width="75px;"/><br /><sub>Wilbert Tanumihardja</sub>](https://github.com/WTanumihardja)<br /> | 
 | :---: | :---: | :---: |
 
-## Model Introduction
+## Introduction
+<img src="HijaiyahClassification.jpg" alt="Image" width= "400" height="400">
 
-This project focuses on developing a Audio Classification system using machine learning techniques. The goal is to accurately identify Hijaiyah to help customers learn about Arabic Alphabet and how to pronounce it right .
+This feature focuses on developing a Audio Classification system using machine learning techniques. The goal is to accurately identify Hijaiyah letters to help customers learn about Arabic Alphabet and how to pronounce it right .
 
 All models link: https://drive.google.com/drive/folders/12eklYCcZ_X8WhCX4gqSNuZLwpvS2EP23?usp=sharing
 
@@ -16,12 +17,15 @@ All models link: https://drive.google.com/drive/folders/12eklYCcZ_X8WhCX4gqSNuZL
 - [Dataset](#dataset)
 - [Project Steps](#project-steps)
 - [Results](#results)
+- [Reference](#reference)
 
 ## Dataset
 
 The dataset used for this project contains Arabic Alphabet (Hijaiyah) audio files with a .wav format. It consists of 29 alphabets (~ 140 audio each). 
 
 Dataset link: https://drive.google.com/drive/folders/1GXyFO6LGBgO-FNRjDIu5fRALkoAb2en2
+
+
 
 ## Project Steps
 
@@ -36,4 +40,16 @@ The project follows these steps:
 
 ## Results
 
-The best performing model for this project is the CNN combined with MFCC and Spectogram technique. This combination achieved a Training loss: 0.0067 with accuracy: 0.9985 and val_loss: 0.3433 with val_accuracy: 0.9164, indicating its effectiveness in accurately identifying Hijaiyah Alphabet.
+The best performing model for this project is the CNN combined with MFCC and Spectogram technique. This combination achieved a Training loss: 0.0569 - accuracy: 0.9843 and val_loss: 0.2084 - val_accuracy: 0.9433, indicating its effectiveness in accurately identifying Hijaiyah Alphabet.
+
+![](EpochModelCNN.png)
+
+## Train vs Validation
+![](TrainvsVal.png)
+
+## Prediction
+<img src="Predictioin.png" alt="Image" width="400">
+
+## Reference
+https://www.mdpi.com/2076-3417/11/6/2508
+
