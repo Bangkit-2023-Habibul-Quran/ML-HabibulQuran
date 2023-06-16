@@ -5,9 +5,9 @@ The model is a fine-tuned version of the Wav2Vec2 XLS-R with 300 m parameter mod
 ## Dataset
 
 For the fine-tuning process, the Wav2Vec2 XLSR model was trained on a dataset specifically created for Quran recitation. 
-The dataset used for fine-tuning the model is called Ar-DAD (Arabic Diversified Audio Dataset), for the detail : https://data.mendeley.com/datasets/3kndp5vs6b/3
+The dataset used for fine-tuning the model is called Ar-DAD (Arabic Diversified Audio Dataset), for the detail : [Ar-DAD (Arabic Diversified Audio Dataset)](https://data.mendeley.com/datasets/3kndp5vs6b/3)
 
-And we have an audio dataset that has been transformed into an array : https://drive.google.com/file/d/1p2OMbXNpgin-2GOcHq_7NpkoYhb_o91y/view
+And we have an audio dataset that has been transformed into an array : [transformed_dataset](https://drive.google.com/file/d/1p2OMbXNpgin-2GOcHq_7NpkoYhb_o91y/view)
 
 This dataset contains audio recordings of Quranic verses along with their corresponding transcriptions. By training the model on this dataset, it learns to recognize and generate accurate transcriptions for Quranic verses.
 
