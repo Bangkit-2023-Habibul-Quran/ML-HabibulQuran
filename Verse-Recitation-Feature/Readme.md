@@ -89,4 +89,5 @@ It achieves the following results on the evaluation set:
 - https://arxiv.org/pdf/1904.08779.pdf
 - https://arxiv.org/pdf/2006.11477.pdf
 - https://www.researchgate.net/publication/347762743_Ar-DAD_Arabic_diversified_audio_dataset
+- https://huggingface.co/blog/fine-tune-xlsr-wav2vec2
 
