@@ -1,10 +1,12 @@
-## Model description
+## Model Introduction
 
 The model is a fine-tuned version of the Wav2Vec2 XLS-R with 300 m parameter model designed for Quran verse recitation. The base model, Wav2Vec2 XLSR, is a state-of-the-art automatic speech recognition (ASR) model that has been pre-trained on a large amount of multilingual audio data.
 
-## Data Preparation
+## Dataset
 
-For the fine-tuning process, the Wav2Vec2 XLSR model was trained on a dataset specifically created for Quran recitation. This dataset contains audio recordings of Quranic verses along with their corresponding transcriptions. By training the model on this dataset, it learns to recognize and generate accurate transcriptions for Quranic verses.
+For the fine-tuning process, the Wav2Vec2 XLSR model was trained on a dataset specifically created for Quran recitation. 
+The dataset used for fine-tuning the model is called Ar-DAD (Arabic Diversified Audio Dataset), for the detail : https://data.mendeley.com/datasets/3kndp5vs6b/3
+This dataset contains audio recordings of Quranic verses along with their corresponding transcriptions. By training the model on this dataset, it learns to recognize and generate accurate transcriptions for Quranic verses.
 
 ## Training and evaluation data
 
