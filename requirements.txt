@@ -1,9 +1,0 @@
-gunicorn
-tensorflow
-librosa
-resampy
-flask
-keras
-pandas
-numpy
-scikit-learn
