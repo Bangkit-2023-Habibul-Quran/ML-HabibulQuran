@@ -9,7 +9,7 @@
 
 This feature focuses on developing a Audio Classification system using machine learning techniques. The goal is to accurately identify Hijaiyah letters to help customers learn about Arabic Alphabet and how to pronounce it right .
 
-All models link: https://drive.google.com/drive/folders/12eklYCcZ_X8WhCX4gqSNuZLwpvS2EP23?usp=sharing
+[All models link](https://drive.google.com/drive/folders/12eklYCcZ_X8WhCX4gqSNuZLwpvS2EP23?usp=sharing)
 
 ## Table of Contents
 
@@ -22,8 +22,8 @@ All models link: https://drive.google.com/drive/folders/12eklYCcZ_X8WhCX4gqSNuZL
 
 The dataset used for this project contains Arabic Alphabet (Hijaiyah) audio files with a .wav format. It consists of 29 alphabets (~ 140 audio each). 
 
-- Audio Dataset link: https://drive.google.com/drive/folders/1nEHE705xw6s9V3rrRKZF3Sthk3J5a-23?usp=drive_link
-- CSV Dataset link: https://drive.google.com/drive/folders/1GXyFO6LGBgO-FNRjDIu5fRALkoAb2en2
+- [Audio Dataset](https://drive.google.com/drive/folders/1nEHE705xw6s9V3rrRKZF3Sthk3J5a-23?usp=drive_link)
+- [CSV Dataset](https://drive.google.com/drive/folders/1GXyFO6LGBgO-FNRjDIu5fRALkoAb2en2)
 
 
 
