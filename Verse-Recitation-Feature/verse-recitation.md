@@ -17,6 +17,8 @@ The project follows these steps:
 2. Preprocess Data : load and resample the audio data, extract the input_values, encode the transcriptions to label ids
 3. Training : Set up trainer, Feed the preprocessed data, along with the tokenized text and extracted audio features
 4. Evaluation : Measure metrics word error rate to assess how well the model can transcribe Quranic verses.
+5. Convert Model to HDF5 : To ensure compatibility with TensorFlow, the pretrained model's output, pytorch_model.bin, can be converted to HDF5 format. 
+6. Test ASR model prediction
 
 ### Training hyperparameters
 
