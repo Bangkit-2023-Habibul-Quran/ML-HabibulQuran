@@ -9,6 +9,8 @@ The dataset used for fine-tuning the model is called Ar-DAD (Arabic Diversified 
 
 This dataset contains audio recordings of Quranic verses along with their corresponding transcriptions. By training the model on this dataset, it learns to recognize and generate accurate transcriptions for Quranic verses.
 
+## Project Steps
+
 The project follows these steps:
 
 1. Prepare Data, Tokenizer, Feature Extractor
