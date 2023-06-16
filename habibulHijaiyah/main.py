@@ -40,14 +40,14 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 # Load data dari file CSV
-Xdata = pd.read_csv('./Dataload/filtered_10class.csv')
+Xdata = pd.read_csv('./Dataload/filtered_10class.csv') #path to csv
 
 # Load label encoder dan fitting
 label_encoder = LabelEncoder()
 label_encoder.fit(Xdata['label'])
 
 # Memuat model yang telah disimpan
-model = load_model('./model/model10huruf.h5')
+model = load_model('./model/model10huruf.h5') #path to model
 
 # # Karakteristik audio yang diharapkan
 # expected_sample_rate = 44100
