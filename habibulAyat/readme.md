@@ -16,7 +16,7 @@ The Google Cloud Run is a fully managed serverless compute platform provided by 
     * Activate **Cloud Shell**
     * Clone ML-HabibulQuran git repository
       ````
-      git clone -b ??? "https://github.com/Bangkit-2023-Habibul-Quran/ML-HabibulQuran.git" habibulAyat
+      git clone -b habibulAyatModel "https://github.com/Bangkit-2023-Habibul-Quran/ML-HabibulQuran.git" habibulAyat
       ````
     * Go to the  folder
       ````
