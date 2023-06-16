@@ -1,6 +1,14 @@
+# Habibul Verse Recognition Model
+<br>
+
+## Machine Learning Team 
+| [<img src="https://avatars.githubusercontent.com/u/70382269?v=4" width="75px;"/><br /><sub>Giovaldi Ramadhan</sub>](https://github.com/giovaldir)<br /> | [<img src="https://avatars.githubusercontent.com/u/126967488?v=4" width="75px;"/><br /><sub>Mujadid Syahbana</sub>](https://github.com/mujadidsyahbana)<br /> | [<img src="https://avatars.githubusercontent.com/u/90538472?v=4" width="75px;"/><br /><sub>Wilbert Tanumihardja</sub>](https://github.com/WTanumihardja)<br /> | 
+| :---: | :---: | :---: |
+
+
 ## Model Introduction
 
-The model is a fine-tuned version of the Wav2Vec2 XLS-R with 300 m parameter model designed for Quran verse recitation. The base model, Wav2Vec2 XLSR, is a state-of-the-art automatic speech recognition (ASR) model that has been pre-trained on a large amount of multilingual audio data. We load the model with transformer huggingface module to use the pre-trained Wav2Vec2 model.
+The model is a fine-tuned version of the `Wav2Vec2 XLS-R` with 300 million parameter model designed for Quran verse recitation. The base model, `Wav2Vec2 XLSR`, is a state-of-the-art automatic speech recognition (ASR) model that has been pre-trained on a large amount of multilingual audio data. We load the model with transformer huggingface module to use the pre-trained Wav2Vec2 model.
 
 ## Dataset
 
@@ -17,25 +25,25 @@ This dataset contains audio recordings of Quranic verses along with their corres
 
 The project follows these steps:
 
-1. Prepare Data, Tokenizer, Feature Extractor
-2. Preprocess Data : load and resample the audio data, extract the input_values, encode the transcriptions to label ids
-3. Training : Set up trainer, Feed the preprocessed data, along with the tokenized text and extracted audio features
-4. Evaluation : Measure metrics word error rate to assess how well the model can transcribe Quranic verses.
-5. Convert Model to HDF5 : To ensure compatibility with TensorFlow, the pretrained model's output, pytorch_model.bin, can be converted to HDF5 format. 
-6. Test ASR model prediction
+1. **Prepare Data**, Tokenizer, Feature Extractor
+2. **Preprocess Data** : load and resample the audio data, extract the input_values, encode the transcriptions to label ids
+3. **Training** : Set up trainer, Feed the preprocessed data, along with the tokenized text and extracted audio features
+4. **Evaluation** : Measure metrics word error rate to assess how well the model can transcribe Quranic verses.
+5. **Model Conversion to HDF5** : To ensure compatibility with TensorFlow, the pre-trained model's output, pytorch_model.bin, can be converted to HDF5 format. 
+6. **Test** ASR model prediction
 
 ### Training hyperparameters
 
 The following hyperparameters were used during training:
-- learning_rate: 2e-4
-- train_batch_size: 50
-- eval_batch_size: 8
-- seed: 42
-- gradient_accumulation_steps: 2
-- optimizer: Adamw_torch
-- lr_scheduler_type: linear
-- num_epochs: 25 (but 20 epoch succes 5 fail to run and save)
-- mixed_precision_training: Native AMP
+- learning_rate: `2e-4`
+- train_batch_size: `50`
+- eval_batch_size: `8`
+- seed: `42`
+- gradient_accumulation_steps: `2`
+- optimizer: `Adamw_torch`
+- lr_scheduler_type: `linear`
+- num_epochs: `25` (but 20 epoch success 5 fail to run and save)
+- mixed_precision_training: `Native AMP`
 
 ## Training and Evaluation Results
 
@@ -66,16 +74,16 @@ The following table shows the training and evaluation results for the model:
 
 # Model Summary
 
-This model has undergone multiple rounds of fine-tuning using the Wave2Vec2 model. This iterative fine-tuning process was repeated several times to progressively enhance the model's performance and capabilities. Finally, the model presented here is the result of the fine-tuning process based on zarko1231/model-baru-collab using the underlying architecture from facebook/wav2vec2-xls-r-300m.
+This model has undergone multiple rounds of fine-tuning using the `Wave2Vec2` model. This iterative fine-tuning process was repeated several times to progressively enhance the model's performance and capabilities. Finally, the model presented here is the result of the fine-tuning process based on [zarko1231/model-baru-collab](https://huggingface.co/zarko1231/model-baru-collab) using the underlying architecture from [facebook/wav2vec2-xls-r-300m](https://huggingface.co/facebook/wav2vec2-xls-r-300m).
 
 It achieves the following results on the evaluation set:
-- Training Loss: 0.059200
-- Validation Loss : 0.077483
-- Wer: 0.312775
+- Training Loss: `0.059200`
+- Validation Loss : `0.077483`
+- Wer: `0.312775`
 
 ### Framework versions
 
-- Transformers 4.28.0
-- Pytorch 2.0.1+cu118
-- Datasets 2.12.0
-- Tokenizers 0.13.3
+- Transformers `4.28.0`
+- Pytorch `2.0.1+cu118`
+- Datasets `2.12.0`
+- Tokenizers `0.13.3`
