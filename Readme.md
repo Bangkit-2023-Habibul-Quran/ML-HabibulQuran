@@ -1,4 +1,4 @@
-# Habibul Verse Recognition Model
+# Al-Qur'an Verse Recognition Model
 <br>
 
 ## Machine Learning Team 
