@@ -8,8 +8,8 @@ from tempfile import TemporaryFile
 
 app = Flask(__name__)
 
-custom_cache_dir = "./caching"
-my_model="./load"
+custom_cache_dir = "./caching" #path untuk menyimpan cache model
+my_model="./load" #path untuk menyimpan model.h5
 processor = Wav2Vec2Processor.from_pretrained(my_model, cache_dir=custom_cache_dir, local_files_only=True)
 model = TFWav2Vec2ForCTC.from_pretrained(my_model, cache_dir=custom_cache_dir, local_files_only=True)
 
