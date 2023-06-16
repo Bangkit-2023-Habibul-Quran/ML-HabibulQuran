@@ -6,7 +6,6 @@
 | :---: | :---: | :---: |
 
 ## Introduction
-<img src="HijaiyahClassification.jpg" alt="Image" width= "400" height="400">
 
 This feature focuses on developing a Audio Classification system using machine learning techniques. The goal is to accurately identify Hijaiyah letters to help customers learn about Arabic Alphabet and how to pronounce it right .
 
